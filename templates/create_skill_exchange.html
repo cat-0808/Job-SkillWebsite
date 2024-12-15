@@ -1,0 +1,11 @@
+{% include 'navbar.html' %}
+<div style="max-width: 800px; margin: auto; padding: 20px;">
+    <h1 style="color: #34495e;">Post a Skill Exchange</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" style="background-color: #3498db; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+            Submit Skill Exchange
+        </button>
+    </form>
+</div>
